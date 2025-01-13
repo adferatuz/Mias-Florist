@@ -1,0 +1,146 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.2);
+    grid-column: span 3 / span 3;
+    font-size: 14px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding-bottom: 1em;
+}
+
+.container-fluid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto;
+    gap: 5px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.navbar div:nth-child(1) div:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap : 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.navbar div:nth-child(1) div:nth-child(1) img{
+    width: 20%;
+    height: auto;
+}
+.navbar div:nth-child(1) div:nth-child(1) p{
+    margin: 0;
+}
+.navbar div:nth-child(1) div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+.navbar div:nth-child(2) div:nth-child(1) img {
+    width: 80%;
+}
+
+.navbar div:nth-child(3) div:nth-child(1){
+   display: flex;
+   align-items: center;
+}
+.navbar div:nth-child(3) div:nth-child(1) p{
+    font-weight: bold;
+}
+.navbar div:nth-child(3) div:nth-child(2) div:nth-child(3){
+    display: flex;
+    justify-content: flex-start;
+    width: 22%;
+}
+
+
+
+.disable{
+    pointer-events: none;
+    cursor: not-allowed;
+    color: gray;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding: 0;
+    margin: 0;
+    margin-left: 15%;
+
+}
+
+
+.links li a {
+    text-decoration: none;
+    /* Quita la subrayado predeterminado */
+    color: #0d0c0c;
+    /* Color inicial del texto */
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* Transición suave para el color */
+}
+
+.links li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #e7d7d7;
+    /* Color de la línea */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.links li a:hover::after,
+.links li a.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.container-payment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 80%;
+    justify-content: center;
+}
+
+.container-payment div:nth-of-type(1) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar div:nth-child(3) div:nth-child(2) div:nth-child(1) img {
+    width: 100%;
+}
+
+.list--container-payment {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+
+}
+
+.list--container-payment li {
+    font-size: 16px;
+    line-height: 0.6;
+    margin: 0;
+    padding: 0;
+    max-width: 70%;
+}

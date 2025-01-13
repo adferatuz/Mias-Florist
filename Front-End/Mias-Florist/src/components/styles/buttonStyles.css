@@ -1,0 +1,138 @@
+/*Estilos del boton de busqueda*/
+.search-button {
+    background-color: #f8f7f7; 
+    border: none; 
+    color: white;
+    padding: 4px 10px;
+    cursor: pointer; 
+    font-size: 16px;
+    border-radius: 0 25px 25px 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover para el botón */
+.search-button:hover {
+    background-color: #f8f7f7; /* Color más oscuro al pasar el cursor */
+}
+
+/*Estilos del boton del carrito de compras*/
+.cart-button {
+    display: flex; /* Alinea los elementos en fila */
+    align-items: center; /* Centra los íconos verticalmente */
+    background-color: #f5dada; /* Color del fondo del botón */
+    color: white; /* Color del texto/íconos */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 6px 12px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    position: relative; /* Permite posicionar elementos dentro */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+/* Hover para el botón */
+.cart-button:hover {
+    background-color: #f5dada; /* Color más oscuro al pasar el cursor */
+}
+
+/* Ícono del carrito */
+.cart-icon {
+    margin-right: 7px; /* Espaciado entre el ícono y el texto/contador */
+    font-size: 20px; /* Tamaño del ícono */
+}
+
+/* Contador */
+.cart-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow; /* Fondo amarillo */
+    color: black; /* Texto negro */
+    font-size: 14px; /* Tamaño del contador */
+    font-weight: bold; /* Texto en negrita */
+    width: 20px; /* Anchura del círculo */
+    height: 20px; /* Altura del círculo */
+    border-radius: 50%; /* Hace que el contador sea circular */
+    border: 2px solid white; /* Borde blanco para destacar el contador */
+}
+
+.yellow-button{
+    display: flex; /* Alinea los elementos en fila */
+    background-color: #e6aa05; /* Color del fondo del botón */
+    color: rgb(13, 13, 13); /* Color del texto/íconos */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 12px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: bold;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    position: relative; /* Permite posicionar elementos dentro */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+    width: 100%;
+    max-width: 80%;
+    justify-content: center;
+    align-content: center;
+}
+
+.sign-button{
+   height: 50%;
+   max-width: 90%;
+}
+
+.prev-button{
+    background-color: #f86c91;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    width: 22%;
+    height: 30%;
+}
+
+.icon-prev{
+    width: 20%;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.icon-next{
+
+}
+
+.radio-button{
+    position: absolute;
+    bottom: 8%;
+    left: 18%;
+    height: 20%;
+    max-height: 11%;
+    width: 20%;
+    max-width: 5%;
+    border: 3px solid ;
+    border-radius: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 3px;
+    box-sizing: border-box;
+}
+
+.icon-radio{
+    margin-top: -20px;
+    width: 0.5em;
+    height: 0.5em;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+/* Estilo para dispositivos pequeños */
+@media (max-width: 480px) {
+    .cart-button {
+        padding: 8px 15px; /* Ajusta el tamaño del botón */
+    }
+
+    .cart-count {
+        font-size: 12px; /* Reduce el tamaño del contador */
+        width: 16px; /* Reduce el ancho del círculo */
+        height: 16px; /* Reduce la altura del círculo */
+    }
+}
