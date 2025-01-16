@@ -80,30 +80,79 @@
 }
 
 .prev-button{
-    background-color: #f86c91;
+    background-color: #f35b83;
     position: absolute;
-    top: 20%;
-    right: 15%;
-    width: 22%;
-    height: 30%;
+    top: 18%;
+    right: 8%;
+    width: 23%;
+    height: 37%;
+    display: flex; /* Alinea los elementos en fila */
+    align-items: center; /* Centra los íconos verticalmente */
+    justify-content: center;
+    color: white; /* Color del texto/íconos */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 2em; /* Bordes redondeados */
+    padding: 6px 12px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+    gap: 14px;
+    z-index: 999;
 }
 
-.icon-prev{
-    width: 20%;
-    border: 2px solid;
+.circle-icon{
+    width: 28%;
+    height: 58%;
+    border: 3px solid;
     border-radius: 50%;
+    outline: none;
+    user-select: none;
+    transition: opacity 0.3s ease;
 }
 
-.icon-next{
-
+.icon-caret{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
 }
+
+.icon-caret span {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.caret-top {
+    top: 50%;
+    transform-origin: top left;
+    transform: rotate(-45deg);
+}
+
+.caret-bottom {
+    bottom: 50%;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+.circle-icon:focus{
+    outline: none;
+}
+
+#left-circle:focus ~ #right-circle,
+#right-circle:focus ~ #left-circle {
+    opacity: 0.5;
+}
+
 
 .radio-button{
     position: absolute;
     bottom: 8%;
-    left: 18%;
+    left: 17%;
     height: 20%;
-    max-height: 11%;
+    max-height: 9%;
     width: 20%;
     max-width: 5%;
     border: 3px solid ;
@@ -123,6 +172,7 @@
     border-radius: 50%;
     background-color: #333;
 }
+
 
 /* Estilo para dispositivos pequeños */
 @media (max-width: 480px) {

@@ -14,8 +14,12 @@ export const CardMain = () => {
             <section className="card-main">
             <Button
                 type={'button'}
-                className={'cart-button prev-button'}                
+                className={'prev-button'}                
             />
+                <div className="circle circle1"></div>
+                <div className="circle circle2"></div>
+                <div className="circle circle3"></div>
+                <div className="circle circle4"></div>
             </section>
         </main>
     )
