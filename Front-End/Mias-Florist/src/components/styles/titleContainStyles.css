@@ -1,0 +1,35 @@
+.title-contain{
+    position: absolute;
+    top: 35%;
+    left: 250px;
+    width: 50%;
+    grid-row-start: 2;
+    z-index: 997;
+
+}
+
+.title{
+    font-size: 2.7em;
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    color: #3d3c3c;
+    margin: 0;
+}
+
+.subtitle{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.subtitle strong em{
+    color: #f35b83;
+}
+
+.title-contain h1:nth-of-type(2){
+    color: #f35b83;
+}
+

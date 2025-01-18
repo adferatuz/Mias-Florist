@@ -99,6 +99,12 @@
     z-index: 999;
 }
 
+.title-contain .buy-button{
+    max-width: 30%;
+    font-size: 0.9em;
+
+}
+
 .circle-icon{
     width: 28%;
     height: 58%;
