@@ -2,7 +2,8 @@ import './styles/homeStyles.css'
 import { CardMain } from '../components/CardMain'
 import { TitleContain } from '../components/TitleContain'
 import { Card2 } from '../components/Card2'
-import { TopSellers } from '../components/TopSellers'
+import { Carousel } from '../components/Carousel'
+import { card1 } from '../core/utils/utils'
 
 export default function Home() {
     return (
@@ -10,8 +11,7 @@ export default function Home() {
             <CardMain />
             <TitleContain />
             <Card2 />
-            <TopSellers />
-
+            <Carousel card={card1} />
         </div>
     )
 }
