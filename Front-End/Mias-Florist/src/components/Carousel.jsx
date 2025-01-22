@@ -5,16 +5,18 @@ import './styles/carouselStyles.css';
 export const Carousel = ({card}) => {
     return (
         <>
-            <div className="top-sellers-container">
+            <div className="container-carousel">
                 <div className="subtitle-container">
-                    <h2 className="top-sellers-title">Top Sellers</h2>
+                    <h2 className="title-carousel">Top Sellers</h2>
                     <span className="circle circle-span"></span>
                     <span className="circle circle-span"></span>
                     <span className="circle circle-span"></span>
                     <span className="circle circle-span"></span>
                 </div>
 
-                <TopSellers card= {card}/>
+                <div className="container-carousel-cards">
+                    <TopSellers card= {card}/>
+                </div>
 
                 <div className="footer-top-seller">
                     <span className="circle"></span>

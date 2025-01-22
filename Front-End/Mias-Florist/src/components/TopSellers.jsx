@@ -1,14 +1,14 @@
 import './styles/topSellersStyles.css'
 import Button from './Button'
 
-export const TopSellers = ({card}) => {
+export const TopSellers = ({ card }) => {
     return (
 
-        <div className="container-card-top-sellers">
+        <>
             {Object.keys(card).map((item, index) => (
-                <div className="top-seller" key={index}>
+                <div className="container-card1" key={index}>
                     <div
-                        className={`background-top-seller ${card[item].promo ?
+                        className={`background-card1 ${card[item].promo ?
                             card[item].className[0] : card[item].className[1]}`}>
                     </div>
                     <div className="img-container">
@@ -32,10 +32,10 @@ export const TopSellers = ({card}) => {
                             content={'Add to cart'}
                         />
                     </div>
-
                 </div>
             ))}
-        </div>
+        </>
+
 
     )
 }

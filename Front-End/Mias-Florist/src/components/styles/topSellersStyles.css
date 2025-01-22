@@ -1,13 +1,4 @@
-.container-card-top-sellers{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 70%;
-    padding: 0;
-}
-
-
-.top-seller{
+.container-card1{
     width: 30%;
     height: 100%;
     margin: 0 5px;
@@ -41,7 +32,7 @@
     font-size: 0.8em;
     font-weight: bold;
 }
-.card1-price{
+.card-price{
     margin: 0;
     font-size: 1em;
     font-weight: bold;
@@ -56,7 +47,7 @@
     
 }
 
-.card1-price + p{
+.card-price + p{
     margin: 0;
     font-size: 0.6em;
 }
@@ -75,11 +66,7 @@
     color: #ffffff;
 } 
 
-.container-card-top-sellers div:nth-child(3) .button-sale{
-    width: 30%;
-}
-
-.top-seller .background-top-seller{
+.container-card1 .background-card1 {
     position: absolute;
     top: 0;
     left: 0;
