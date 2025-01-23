@@ -24,15 +24,16 @@ export default function Button ({
                     </>)
                         :
                 className === 'prev-button'?
-                    (<>
-                        <div className="circle-icon icon-caret " id="left-circle" tabIndex={0}>
-                            <span className='caret-top'></span>
-                            <span className='caret-bottom'></span>
-                        </div> 
-                        <div className="circle-icon icon-caret" id="right-circle" tabIndex={0}>
-                            <img src={imgCaretMayor} alt="Icono caret derecho" />
-                        </div>                                               
-                    </>)
+                        (<>
+                            <div className="circle-icon icon-caret " id="left-circle" tabIndex={0}>
+                                <span className='caret-top'></span>
+                                <span className='caret-bottom'></span>
+                            </div>
+                            <div className="circle-icon icon-caret" id="right-circle" tabIndex={0}>
+                                <span className='caret-top'></span>
+                                <span className='caret-bottom'></span>
+                            </div>
+                        </>)
                         :
                 className === 'radio-button' ?
                     (<>

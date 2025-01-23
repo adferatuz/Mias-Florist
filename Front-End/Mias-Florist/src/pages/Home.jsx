@@ -11,7 +11,7 @@ export default function Home() {
             <CardMain />
             <TitleContain />
             <Card2 />
-            <Carousel card={card1} />
+            <Carousel title={'Top Sellers'} cards={card1} />
         </div>
     )
 }

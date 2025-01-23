@@ -50,5 +50,37 @@ export const card1 = {
         promo: '',
         price: ['$99,oo'],
         className : className
-    }
+    }/*,
+    item5: {
+        img: imgGroup9122,
+        alt: 'Image of a bouquet of flowers',
+        description: 'Florall arrangement Roses in Lux',
+        promo: 'New',
+        price: ['$99,oo'],
+        className : className
+    },
+    item6: {
+        img: imgGroup9123,
+        alt: 'Image arrangement of a Day Roses',
+        description: 'Floral arrangement Day Roses in Black',
+        promo: '',
+        price: ['$89,oo'],
+        className : className
+    },
+    item7: {
+        img: imgSieirfhek,
+        alt: 'Floral White roses',
+        description: 'Floral bouquet of Pink and White roses',
+        promo: '60% off',
+        price: ['$49,oo', '$109,oo'],
+        className : className
+    },
+    item8: {
+        img: imgGroup9124,
+        alt: 'Floral roses day in golden',
+        description: 'Floral arrangement of Roses of the Day in a Golden',
+        promo: '',
+        price: ['$99,oo'],
+        className : className
+    }*/
 }

@@ -4,12 +4,12 @@
     display: flex;
     flex-direction: column;          
     width: 100%;
-    height: 100%;
-    border: 2px solid; 
+    height: 100%; 
     text-align: center;
     box-sizing: border-box;
     margin: -6% 0 7% 0;
     padding: 0 3em;
+    overflow: hidden;
     position: relative;
 }
 
@@ -19,6 +19,7 @@
     width: 100%;
     height: 70%;
     padding: 0;
+    transition: transform 0.5s ease-in-out;
 }
 
 .container-carousel-cards div:nth-child(3) .button-sale{
@@ -58,6 +59,10 @@
     right: 40%;
 }
 
+.dot.active {
+    background-color: #f35b83;
+  }
+
 .title-carousel{
     margin: 0 0 1em 0;
 }
@@ -73,7 +78,7 @@
 }
 
 .footer-top-seller span{
-    background-color: #f35b83;
+    background-color: #ebebebcc;
 }
 
 .container-carousel .circle-icon{
@@ -85,8 +90,39 @@
 .icon-caret-left{
     top: 46%;
     left: 1%;
+    border: solid #f35b83;
+    opacity: 0.5;
+}
+
+.icon-caret-left:hover{
+    opacity: 1;
 }
 .icon-caret-right{
     top: 46%;
     right: 1%;
+    border: solid #f35b83;
+    opacity: 0.5;
+}
+
+.icon-caret-right:hover{
+    opacity: 1;
+}
+
+.icon-caret-left span{
+    background-color: #f35b83;
+}
+.icon-caret-right span{
+    background-color: #f35b83;
+}
+
+.icon-caret-right .caret-top {
+    top: 50%;
+    transform-origin: top right;
+    transform: rotate(-45deg);
+}
+
+.icon-caret-right  .caret-bottom {
+    bottom: 50%;
+    transform-origin: bottom right;
+    transform: rotate(45deg);
 }

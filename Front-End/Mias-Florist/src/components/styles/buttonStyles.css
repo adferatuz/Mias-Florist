@@ -120,6 +120,7 @@
     justify-content: center;
     position: relative;
     cursor: pointer;
+    opacity: 0.5;
 }
 
 .icon-caret span {
@@ -143,13 +144,20 @@
     transform: rotate(45deg);
 }
 
+#right-circle .caret-top{
+    transform-origin: top right;
+}
+#right-circle .caret-bottom{
+    transform-origin: bottom right;
+}
+
 .circle-icon:focus{
     outline: none;
 }
 
 #left-circle:focus ~ #right-circle,
 #right-circle:focus ~ #left-circle {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 

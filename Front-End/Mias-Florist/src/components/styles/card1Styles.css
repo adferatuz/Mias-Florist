@@ -39,7 +39,7 @@
     color: #f35b83 ;
 }
 
-.top-seller em{
+.container-card1 em{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +83,7 @@
 }
 
 .background-grey{
-    background-color: hsla(0, 0%, 92%, 0.8);
+    background-color: #ebebebcc;
 }
 
 .background-3{
@@ -108,7 +108,7 @@
     align-items: center;
 }
 
-.top-seller:hover {
+.container-card1:hover {
     transform: scale(1.05);
 }
 
